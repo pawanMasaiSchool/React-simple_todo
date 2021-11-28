@@ -5,7 +5,9 @@ export default function TodoList({ myTodos }) {
   return (
     <div>
       {myTodos.map((item) => {
-        return <TodoItem title={item.title} status={item.status} />;
+        return (
+          <TodoItem title={item.title} status={item.status} id={item.id} />
+        );
       })}
     </div>
   );

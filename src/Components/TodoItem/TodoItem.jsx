@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styling from "./TodoItem.module.css";
 
-export default function TodoItem({ title, status }) {
+export default function TodoItem({ title, status, id }) {
   const [toggle, setToggle] = useState(status);
   const [btn, setBtn] = useState(styling.green);
   const toggleStatus = (val) => {
